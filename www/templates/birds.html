@@ -1,0 +1,18 @@
+<ion-view title="Birds">
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="birdlist in birdlists" href="#/app/birdlists/{{birlist.id}}">
+
+                <a class="item item-thumbnail-left" href="#">
+                <img ng-src="img/{{birdlist.image}}"/>
+
+                    <h3>{{birdlist.name}}</h3>
+                    <p>{{birdlist.description}}</p>
+                </a>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
